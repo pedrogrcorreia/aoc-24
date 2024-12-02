@@ -1,8 +1,10 @@
 import day.Day
-import day.day1.Day1
+import day.getDay
 
 fun main() {
-    printDaySolution(Day1(1))
+    for(i in 1 .. CURRENT_DAY) {
+        printDaySolution(getDay(i))
+    }
 }
 
 private fun printDaySolution(day: Day) {
@@ -10,3 +12,5 @@ private fun printDaySolution(day: Day) {
     println("First puzzle solution: ${day.firstPuzzleSolution()}\n")
     println("Second puzzle solution: ${day.secondPuzzleSolution()}\n")
 }
+
+private const val CURRENT_DAY = 2
