@@ -2,6 +2,7 @@ package day
 
 import day.day1.Day1
 import day.day2.Day2
+import day.day3.Day3
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
@@ -26,5 +27,6 @@ interface Day {
 fun getDay(day: Int): Day = when(day) {
     1 -> Day1(1)
     2 -> Day2(2)
+    3 -> Day3(3)
     else -> throw NotImplementedError("Day $day is not implemented yet.")
 }

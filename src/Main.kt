@@ -13,4 +13,4 @@ private fun printDaySolution(day: Day) {
     println("Second puzzle solution: ${day.secondPuzzleSolution()}\n")
 }
 
-private const val CURRENT_DAY = 2
+private const val CURRENT_DAY = 3
